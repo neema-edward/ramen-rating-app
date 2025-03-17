@@ -27,3 +27,22 @@ h2 {
     margin: 0 auto;
     padding-top: 10px;
 }
+
+h3 {
+    text-align: center;
+    text-decoration: double;
+    background-color: black;
+    color: white;
+    text-decoration;
+}
+
+form {
+    padding-left: 43%;
+    display: block;
+}
+button {
+    text-decoration: double;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

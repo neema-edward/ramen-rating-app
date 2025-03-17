@@ -4,18 +4,6 @@ const ramens = [
     { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "tonkotsu.jpg" }
  ];
 
-//  function displayRamens() {
-//     const ramenMenu =document.getElementById("ramen-menu");
-//     ramens.forEach((ramens)) => {
-//         const img =document.createElement("im2");
-//         img.src =ramens.img;
-//         img.alt = ramens.name;
-//         img.addEventListener("click", () => handleClick(ramens));
-//         ramenMenu.appendChild(img);
-//     };
-//  }
-//     displayRamens();
- 
  document.addEventListener("DOMContentLoaded", () => {
     const ramensArray = [
         "Images/gyukotsu.jpg",
@@ -34,8 +22,40 @@ const ramens = [
     }
 
     setInterval(switchImage, 2000);
- });
+ 
 
     displayRamens();
+});
+
+ function displayRamens() {
+    const ramenMenu =document.getElementById("ramen-menu");
+    ramens.forEach((ramens) => {
+        const img =document.createElement("im2");
+        img.src =ramens.img;
+        img.alt = ramens.name;
+        img.addEventListener("click", () => handleClick(ramens));
+        ramenMenu.appendChild(img);
+    });
+ }
+    // displayRamens();
+
+    // function addSubmitListener() {
+    //     const form = document.getElementById('ramen-form');
+    //     form.addEventListener('submit', (event) => {
+    //         event.preventDefault(); 
+    //         const newRamen = {
+    //             id: ramens.length + 1, 
+    //             name: form.name.value,
+    //             restaurant: form.restaurant.value,
+    //             image: form.image.value,
+    //             rating: parseInt(form.rating.value) || null,
+    //             comment: form.comment.value || ''
+    //         };
+    //         ramens.push(newRamen); 
+    //         displayRamens(); 
+    //         form.reset(); 
+    //     });
+    // }
+ 
 
 
