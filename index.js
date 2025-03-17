@@ -4,6 +4,18 @@ const ramens = [
     { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "tonkotsu.jpg" }
  ];
 
+//  function displayRamens() {
+//     const ramenMenu =document.getElementById("ramen-menu");
+//     ramens.forEach((ramens)) => {
+//         const img =document.createElement("im2");
+//         img.src =ramens.img;
+//         img.alt = ramens.name;
+//         img.addEventListener("click", () => handleClick(ramens));
+//         ramenMenu.appendChild(img);
+//     };
+//  }
+//     displayRamens();
+ 
  document.addEventListener("DOMContentLoaded", () => {
     const ramensArray = [
         "Images/gyukotsu.jpg",
@@ -13,7 +25,7 @@ const ramens = [
         "Images/shoyu.jpg",
     ];
 
-    const im2 = document.getElementById("im2");
+    const img = document.getElementById("im2");
     let currentIndex = 0;
 
     function switchImage() {
@@ -23,3 +35,7 @@ const ramens = [
 
     setInterval(switchImage, 2000);
  });
+
+    displayRamens();
+
+
