@@ -1,0 +1,14 @@
+div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.image-container {
+    width: 150px;
+    height: auto;
+}
+
+.pics {
+    width: 230px;
+    height: auto;
+}
