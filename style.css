@@ -20,3 +20,10 @@ h2 {
     color: white;
 }
 
+#im2 {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 10px;
+}
