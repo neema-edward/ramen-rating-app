@@ -28,7 +28,7 @@ h2 {
     padding-top: 10px;
 }
 
-h3 {
+.form-heading{
     text-align: center;
     text-decoration: double;
     background-color: black;
@@ -37,8 +37,9 @@ h3 {
 }
 
 form {
-    padding-left: 43%;
-    display: block;
+    width: 200px;
+    
+    margin: 0 auto;
 }
 button {
     text-decoration: double;
