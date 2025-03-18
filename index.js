@@ -3,7 +3,7 @@ const ramens = [
     { id: 2, name: "Miso Ramen", restaurant: "Menya", image: "Images/kojiro.jpg", rating: 4, comment: "Very flavorful!" },
     { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "Images/gyukotsu.jpg" },
     {id: 4, name: "Naruto Ramen", restaurant: "Ramen-ya", image: "Images/naruto.jpg" },
-    {id: 3, name: "Neema Ramen", restaurant: "Ramen-ya", image: "Images/nirvana.jpg" }
+    {id: 5, name: "Neema Ramen", restaurant: "Ramen-ya", image: "Images/nirvana.jpg" }
  ];
 
 //  document.addEventListener("DOMContentLoaded", () => {
@@ -32,7 +32,14 @@ const ramens = [
 const ramenMenu =document.getElementById("ramen-menu");
 const placeholder = document.getElementById('im2');
  function displayRamens() {
-    
+    for(let element of ramens){
+        let createdImage = document.createElement('img');
+        createdImage.src = element.image;
+        createdImage.alt = element.name;
+        createdImage.classList.add('image-container');
+
+        ramenMenu.appendChild(createdImage);
+    }
     
     ramenMenu.addEventListener('click', function(event){
         
